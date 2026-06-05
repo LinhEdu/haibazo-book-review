@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 230px;
+  background: #1f2937;
+  color: white;
+  padding: 24px 18px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sidebar p {
+  margin-top: 6px;
+  color: #cbd5e1;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: #374151;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+}
+
+.error {
+  color: #dc2626;
+  margin-bottom: 12px;
+}
+
+.success {
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  min-width: 38px;
+}
+
+.page-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.page-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
